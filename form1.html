@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+</head>
+<body>
+
+    <fieldset style="border: 3px solid darkblue; box-shadow: 3px 2px 5px;">
+
+    <h1>Reservation Request</h1>
+
+<form >
+
+ <!-- First Field of Fieldset -->
+
+    <fieldset>
+
+        <legend style="color:darkblue;" >
+           <b>General Information</b> 
+        </legend>
+
+        <label for="Arrival">Arrival Date: </label>
+        <input type="date" name="Date" id="Arrival" required style="margin-left: 15px;"><br><br>
+
+        <label for="nights">Nights: </label>
+        <input type="number" name="Nights" id="nights" required style="margin-left: 52px;"><br><br>
+
+        <label for="adults">Adults: </label>
+        <input type="number" name="Adults" id="adults" min="0" max="10" required style="margin-left: 52px;"><br><br>
+
+        <label for="childrens">Childrens: </label>
+        <input type="number" name="Childrens" id="childrens" min="0" max="10" required style="margin-left: 33px;"><br>
+
+    </fieldset>
+
+<!-- Second Field of Fieldset -->
+
+    <fieldset>
+
+        <legend style="color: darkblue;">
+            <b>Preference</b>
+        </legend>
+
+        <label >Room Type:</label>
+        <input type="radio" name="roomType" value="Standard" style="margin-left: 18px;">Standard
+        <input type="radio" name="roomType" value="Business" style="margin-left: 15px;">Business
+        <input type="radio" name="roomType" value="Suite" style="margin-left: 15px;">Suite
+<br><br>
+        <label >Bed Type: </label>
+        <input type="radio" name="bedType" value="King" style="margin-left: 31px;">King
+        <input type="radio" name="bedType" value="double" style="margin-left: 15px;">Double Double <br><br>
+
+        <input type="checkbox" name="smoking" style="margin-left: 13px;">Smoking
+<br>
+    </fieldset>
+
+    <!-- Last Field of Fieldset -->
+
+    <fieldset>
+
+        <legend style="color: darkblue;">
+            <b>Contact Information</b>
+        </legend>
+
+        <label for="name">Name: </label>
+        <input id="name" type="text" required style="margin-left: 57px;"><br><br>
+        <label for="Email">Email: </label>
+        <input type="email" name="email" id="email" required style="margin-left: 57px;"><br><br>
+        <label for="phone">Phone: </label>
+        <input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789"required style="margin-left: 55px;"><br>
+        
+    </fieldset><br>
+
+    <input type="submit" value="Submit Reservation" style="margin-left: 50px; padding: 2px 150px;"> 
+
+    <input type="reset" value="Clear" style="margin-left: 30px; padding: 2px 150px;">
+
+</form>
+
+</fieldset>
+
+</body>
+</html>

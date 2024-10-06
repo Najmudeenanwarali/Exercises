@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy-Commerce</title>
+</head>
+<body bgcolor="#0a0908" text="#eae0d5">
+    <table bgcolor="#22333b"  border="1px"
+    cellspacing="0px" cellpadding="3px">
+        <thead>
+            <tr >
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>submit</th>
+                <th>Total</th>
+                <tbody>
+                    <tr>
+                        <th align="left">Apple 15 Pro Max</th>
+                        <td>
+                            <input type="text" name="quantity" id="input">
+                        </td>
+                        <td align="right">&#8377; 1,34,874</td>
+                        <td><button type="submit" onclick="convert()">submit</button></td>
+                        <td id="result"></td>
+                    </tr>
+                    <tr>
+                        <th align="left" >Samsung Galaxy S24 FE</th>
+                        <td>
+                            <input type="number" name="quantity" id="quan2" min="1" max="4" >
+                        </td>
+                        <td align="right">&#8377; 67,874</td>
+                        <td><button type="submit" onclick="convert2()">submit</button></td>
+                        <td id="amount2">Total Amount is : </td>
+                    </tr>
+                    <tr>
+                        <th align="left">Realme 13 Pro+ 5G &nbsp;(512 GB) - Emerald Green</th>
+                        <td> <input type="number" name="quantity" id="quan3" min="1" max="4"></td>
+                        <td align="right">&#8377; 33,874</td>
+                        <td id="amount3">Total Amount is : </td>
+                    </tr>
+                    <tr>
+                        <th align="left">Nothing Phone (2) 5G (512GB) - Grey</th>
+                        <td> <input type="number" name="quantity" id="quan4" min="1" max="4"></td>
+                        <td align="right"> &#8377; 41,274</td>
+                        <td id="amount4">Total Amount is : </td>
+                    </tr>
+                    <tr>
+                        <th align="left">Redmi Note 13 Pro+ (512GB) - Fusion Purple</th>
+                        <td> <input type="number" name="quantity" id="quan5" min="1" max="4"></td>
+                        <td align="right">&#8377; 32,874</td>
+                        <td id="amount5">Total Amount is : </td>
+                    </tr>
+                </tbody>
+            </tr>
+        </thead>
+    </table>
+<script>
+
+    function convert(){
+        const celVal = Number(document.getElementById("input").value)
+        const farVal = celVal+1;
+        const result = document.getElementById("result")
+        result.innerHTML = farVal.toFixed(2) + " Fahrenheit"}
+
+    function convert2(){
+    const quan2 =parseInt(document.getElementById("quan2").value);
+    let total2 = quan2*67874;
+    let amount2 =parseFloat(document.getElementById("amount2"));
+    amount2.innerHTML = total2.toFixed(2);
+    }
+
+    function convert3(){
+    let quan3 = document.getElementById("quan3").value;
+    let total3 = quan3*33874;
+    let amount3 = document.getElementById("amount3");
+    amount3.innerHTML = total3.toFixed(2);
+    }
+
+    function convert4(){
+    let quan4= document.getElementById("quan4").value;
+    let total4 = quan4*41274;
+    let amount4 = document.getElementById(amount4);
+    amount4.innerHTML = total4.toFixed(2);
+    }
+
+    function convert5(){
+    let quan5= document.getElementById("quan5").value;
+    let total5 = quan5*32874;
+    let amount5 = document.getElementById("amount5");
+    amount5.innerHTML = total5.toFixed(2);
+    }
+
+</script>
+</body>
+</html>

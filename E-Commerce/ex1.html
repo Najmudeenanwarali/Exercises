@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+</head>
+<body>
+    <h2>Product Order Form</h2>
+    <form  id="orderForm">
+        <label for="productName">Product Name</label>
+        <input id="productName" type="text" name="productName">
+
+        <label for="quantity">Quantity</label>
+        <input id="quantity" type="number" name="quantity">
+
+        <label for="price">Price</label>
+        <input id="price" type="number" name="price">
+
+        <button type="button" onclick="Result">
+        </button>
+    </form>
+
+    <h2>Order Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+            <tbody id="OrderSummary">
+                
+            </tbody>
+        </thead>
+    </table>
+
+    <script>
+        function Result() {
+            const productName = document.getElementById("productName").value;
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const price = parseFloat(document.getElementById("price").value);
+            const total = (quantity * price).toFixed(2);
+
+            const row = `<tr>
+                <td>${productName}</td>
+                <td>${quantity}</td>
+                <td>$${price.toFixed(2)}</td>
+                <td>$${total}</td>
+                </tr>`;
+document.getElementById("OrderSummary").innerHTML += row;
+document.getElementById("orderForm").reset();
+}
+
+    </script>
+    <script src=""></script>
+
+</body>
+</html>

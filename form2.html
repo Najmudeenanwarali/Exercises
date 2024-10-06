@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <form >
+    <fieldset style="background-color: rgba(255, 255, 0, 0.685); border: 1.5px solid black;">
+        <br>
+
+<!-- First Part - Textbox -->
+
+            <label for="familyName">Family Name</label>
+            
+            <input style="margin-left: 200px;border: 1.5px solid black;" type="text" name="familyName" id="familyName"  placeholder="Family Name" required>
+            <br>
+            <br>
+
+            <label for="otherName">Other Name</label>
+            
+            <input style="margin-left: 209px; border: 1.5px solid black;"  type="text" name="otherName" id="otherName"  placeholder="Other Name" required>
+            <br>
+            <br>
+
+            <label for="Address">Address</label>
+            
+            <input style="margin-left: 235px; border: 1.5px solid black;"  type="text" name="Address" id="Address"  placeholder="Address" required>
+            <br>
+            <br>
+
+            <label for="suburb">Suburb</label>
+            
+            <input  style="margin-left: 241px; border: 1.5px solid black;" list="text" name="suburb" id="suburb"  placeholder="Vic (drop down menu)" required>
+            <br>
+
+            <datalist id="text">
+                <option value="TN">TN</option>
+                <option value="AP">AP</option>
+                <option value="AR">AR</option>
+                <option value="KL">KL</option>
+                <option value="KA">KA</option>
+                <option value="PY">PY</option>
+            </datalist>
+            <br>
+
+            <label >State/Territoy</label>
+            <br>
+            <br>
+            <br>
+
+<!-- Second Part - Checkbox -->
+            
+            <input type="checkbox" id="Engineering" name="Engineering" style="margin-left: 235px; border: 1.5px solid black;">
+            Engineering
+            <br>
+
+            <input type="checkbox" id="IT" name="IT" style="margin-left: 235px; border: 1.5px solid black;">
+            IT
+            <br>
+
+            <label >Course Info On :</label>
+            
+            <input  type="checkbox" id="Law" name="Law" style="margin-left: 123px; border: 1.5px solid black;">
+            Law
+            <br>
+            
+            <input 
+             type="checkbox" id="Medicine"  name="Medicine" style="margin-left: 235px; border: 1.5px solid black;" >
+             Medicine
+             <br>
+            
+             <input type="checkbox" id="Nursing" name="Nursing" style="margin-left: 235px; border: 1.5px solid black;">
+             Nursing
+             <br>
+             <br>
+
+<!-- Third Part - Radio Button -->
+
+            <input type="radio" name="degree" value="Diploma" style="margin-left: 230px; border: 1.5px solid black;"> 
+            &nbsp;Diploma
+            <br>
+
+            <label >Digree</label>
+            <input type="radio" name="degree" value="Degree" style="margin-left: 183px;border: 1.5px solid black;"> 
+            &nbsp;Degree 
+            <br>
+
+            <input type="radio" name="degree" value="Honours" style="margin-left: 230px; border: 1.5px solid black;"> &nbsp;Honours 
+            <br>
+
+            <input type="radio" name="degree" value="Masters" style="margin-left: 230px; border: 1.5px solid black;">
+            &nbsp;Masters 
+            <br>
+
+            <input type="radio" name="degree" value="PhD"style="margin-left: 230px; border: 1.5px solid black;">
+            &nbsp; PhD
+            <br><br>
+
+            <label for="Comments">Comments</label>
+
+            <textarea name="Comments" id="Comments" rows="5" cols="140" required style=" border: 1.5px solid black;">
+            </textarea>
+        
+<!-- Fouth Part - Submit And Clear Button  -->
+
+            <input type="submit" value="Submit" style="margin-left: 100px; padding: 2px 150px;  border: 1.5px solid black;"  />
+            <input type="reset" value="Clear Form" style="margin-left: 10px; padding: 2px 150px; border: 1.5px solid black;">
+            
+        </fieldset>
+    </form>
+</body>
+</html>
