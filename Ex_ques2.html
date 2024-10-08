@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My Concept
+    </title>
+</head>
+<body>
+<!-- first Part Navigation Bar -->
+    <header id="home">
+        <center><h1>Welcome to Our Webpage</h1></center>
+        <nav dir="rtl" >
+            <a href="#photo">Gallery</a>
+            <a href="#form">Applicants</a>
+            <a href="#card">Cards</a>
+            <a href="#price">Prices</a>
+        </nav>
+    </header>
+
+<!-- Second Part Photo Galary -->
+    <main>
+    <aside id="photo">
+        <h2>Photo Galary</h2>
+
+        <figure>
+            <img src="Assets/p7.jpg" alt="img1" width="360px" height="280px"  style="margin-bottom: 14px;">
+            
+            <img src="Assets/p2.jpg" alt="img2" width="360px" height="280px" style="margin: 0 0px 14px 14px;">
+            
+            
+            <img src="Assets/p3.jpg" alt="img3" width="360px" height="280px" style="margin: 0 0 14px 14px;">
+
+            <img src="Assets/p4.jpg" alt="img4" width="360px" height="280px" >
+
+            <img src="Assets/p5.jpg" alt="img5" width="360px" height="280px" style="margin-left: 14px;">
+
+            <img src="Assets/p6.jpg" alt="img6" width="360px" height="280px" style="margin-left: 14px;"> 
+        </figure>
+    </aside>
+    <hr>
+
+<!-- Third Part Forms -->
+
+        <h2 id="form">Studen Registration Form</h2>
+        <form  >
+            <fieldset style="margin-left: 20px;">
+                <legend>
+                    Student Registration form
+                </legend>
+            <br><br>
+            <input type="text" placeholder="Your Name" name="Student Name" autofocus required>
+            <br><br>
+            <input type="number" name="Age"   placeholder=" YourAge"  min="17" max="35">
+            <br><br>
+            <label>Gender</label> <br>
+            <input type="radio" name="Gender" value="male"> Male
+            <input type="radio" name="Gender" value="female"> female
+            <br><br>
+            <input type="tel" name="Phone" placeholder="Mobile number" pattern="[0-9]{10}" > 
+            <br><br>
+            <input type="text" name="City" placeholder="City" required>
+            <br><br>
+            <input list="text" name="State"   placeholder="State/Province" required>
+            <br>
+
+            <datalist id="text">
+                <option value="TN">TN</option>
+                <option value="AP">AP</option>
+                <option value="AR">AR</option>
+                <option value="KL">KL</option>
+                <option value="KA">KA</option>
+                <option value="PY">PY</option>
+            </datalist><br><br>
+            <label for="Course">Course</label>
+            <select name="Course" id="Course" required>
+                <option value="CS">BE (CSE)</option>
+                <option value="Civil">BE (Civil)</option>
+                <option value="Mech">BE (Mech)</option>
+                <option value="EEE">BE (EEE)</option>
+                <option value="ECE">BE (ECE)</option>
+            </select>
+            <br><br>
+            <textarea name="About The Student" cols="20" rows="5" placeholder="Tell About You!"></textarea>
+            <br><br>
+            <input type="button" value="Submit" required>
+
+        </fieldset>
+
+        </form>
+        <br>
+
+<!-- Fouth Part card Layout -->
+
+
+        <div id="card">
+            <h2>Card Layout</h2>
+            
+            <img src="Assets/ECE.jpg" alt="ece.img" width="200px" height="150px">
+              <figcaption> BE(ECE)
+                stands for Bachelor of Engineering in Electronics and Communication Engineering. Electronics and Communication are one of the main branches of Engineering (BE/B. tech). The entire BE ECE is a four-year program which aims to make students qualify for both conceptual and practical knowledge in their domain.</figcaption> 
+
+            <img src="Assets/EEE.jpg" alt="eee.img" width="200px" height="150px">
+              <figcaption> B.E. in Electrical and Electronics Engineering is one of the most selected engineering disciplines. It is concerned with the study, application, and design of electrical and electronic equipment and devices. This field is also preferred for students with a high caliber in Mathematics and Physics.</figcaption> 
+
+            <img src="Assets/civil.jpg" alt="civil.img" width="200px" height="150px">
+              <figcaption> BE Civil Engineering full form is Bachelor of Engineering in Civil Engineering. It's a 4-year undergraduate program that deals with the construction and designing of buildings and structures.</figcaption>
+
+            <img src="Assets/mech.jpg" alt="mech.img" width="200px" height="150px">
+              <figcaption> BE Mechanical Engineering full form stands for Bachelor of Engineering in Mechanical Engineering. The aim of the course is to apply mechanical engineering principles when creating, producing, and maintaining mechanical systems. BE Mechanical Engineering duration is four years divided into eight semesters.</figcaption>
+
+        </div> <hr> <br>
+        <div >
+            <h2>Pricing Table</h2>
+            <table id="price"  border="2px" width="1000px" height="150px">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Mobile Case</td>
+                    <td>$ 1.50</td>
+                </tr>
+                <tr>
+                    <td>Charger</td>
+                    <td>$ 2.50</td>
+                </tr>
+                <tr>
+                    <td>Earbuds</td>
+                    <td>$ 5.50</td>
+                </tr>
+                <tr>
+                    <td>Power Bank</td>
+                    <td>$ 2.00</td>
+                </tr>
+            </table>
+        </div> <hr><br><br>
+
+<!-- Fifth Part dropdown menu -->
+
+        
+        <div id="dropDown">
+            <select name="dropDown" id="drop" >
+                <option value="Home">
+                    <a href="#home">Home</a></option>
+                  <option value="#photo"><a href="#photo">Photo Gallery</a></option> 
+                    <option value="#form"><a href="#form">St.Form</a></option>
+                   <option value="card"><a href="#card">Card Layout</a></option>
+                   <option value="#price"><a href="#price">Pricing Table</a></option> 
+                
+            </select>
+           
+        </div>
+        <nav dir="rtl">
+        <a href="#home" ><img src="Assets/Top Icon.png" alt="Back to Top" width="30px" height="30px"></a></nav>
+    </main><hr><br>
+    <footer>
+        Copyrights &copy Reserved by Najmudeen groups.
+    </footer>
+</body>
+</html>
