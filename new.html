@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgound with picture</title>
+
+    <style>
+        #name {
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+        }
+
+        #name h2 {
+            font-size: 5rem;
+            font-weight: 900;
+            background-image: url(Assets/ECE.jpg);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .position {
+            position: relative;
+            
+        }
+        
+        h3 {
+            border: 1px solid black;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient( to left, rgba(255,0,0,.3), rgb(232, 228, 24,.4), rgba(24, 184, 24,0.6));
+            background-clip: text;
+            color:transparent;    
+        }
+
+        .b1 {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            position: relative;
+            bottom: 122px;
+            left: 225px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="name">
+        <h2>Najmudeen</h2>
+    </div>
+    <div class="position">
+        <h3>Najmudeen</h3>
+        <div class="b1"></div>
+    </div>
+</body>
+</html>
