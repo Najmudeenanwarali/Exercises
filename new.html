@@ -23,17 +23,26 @@
 
         .position {
             position: relative;
+            width: fit-content;
+            height: fit-content;
+
+           
             
         }
         
         h3 {
             border: 1px solid black;
+            background-size: clip;
             text-align: center;
             font-size: 4rem;
             font-weight: 900;
             background: linear-gradient( to left, rgba(255,0,0,.3), rgb(232, 228, 24,.4), rgba(24, 184, 24,0.6));
             background-clip: text;
-            color:transparent;    
+            color:transparent; 
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            position: absolute;
         }
 
         .b1 {
@@ -41,9 +50,9 @@
             height: 10px;
             background-color: black;
             border-radius: 50%;
-            position: relative;
-            bottom: 122px;
-            left: 225px;
+            position: absolute;
+            top:78px;
+            left:85px;
         }
 
     </style>
